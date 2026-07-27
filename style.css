@@ -1,8 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 13px;
-  
-  }
+}
 
 .title {
   font-size: 70px;
@@ -13,79 +12,65 @@ body {
   color:#515076
 }
 
+.product-card {
+  width: 340px;
+  height: 573px;
+}
 
+.product-list {
+  list-style-type: none;
+  background: #F7F7FA;
+  width: 290px;
+  padding: 25px;
+  margin: 25px;
+ }
 
 .appointment {
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 5px;
   color: #A5A3B9;
-
+  
 }
 
-.price {
-  weight: 700;
-  font-style: Bold;
+.description, 
+.compound, 
+.list { 
+  color:#515076 ;
+  padding: 0px;
+  
+}
+
+.list {
+  line-height: 18px;
+  padding: 18px;
+}
+  
+.sell {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  justify-content: left;
+  text-align: left
+}
+
+.tag {
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #515076;
-
-}
-
-.description, .compound, .list li {
-  color:#515076 ;
-  margin: 5px;
-  padding: 5px;
-  
+  text-align: right
 }
 
 
-.block_1 {
-  background:#F7F7FA;
-  list-style-type: none;
-  width: 340px;
-  height: 573px;
-  margin: 100px 25px 25px 25px;
-  padding: 25px 25px;
-}
 
-  
-  .block_2 {
-  background:#F7F7FA;
-  list-style-type: none;
-  width: 340px;
-  height: 573px;
-  margin: 25px 25px 25px 25px; 
-  padding: 25px 25px 25px;
-  }
 
-.block_3 {
-  background:#F7F7FA;
-  list-style-type: none;
-  width: 340px;
-  height: 573px;
-  margin: 25px 25px 25px 25px; 
-  padding: 25px 25px 25px 25px;
-    }
 
-.block_4 {
-  background:#F7F7FA;
-  list-style-type: none;
-  width: 340px;
-  height: 573px;
-  margin: 25px 25px 25px 25px; 
-  padding: 25px 25px 25px 25px;
-    }
 
-.block_5 {
-  background:#F7F7FA;
-  list-style-type: none;
-  width: 340px;
-  height: 573px;
-  margin: 25px 25px 25px 25px; 
-  padding: 25px 25px 25px 25px;
-    }
 
+
+ 
 
 
   
