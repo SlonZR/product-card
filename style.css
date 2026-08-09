@@ -10,20 +10,13 @@ body {
   font-size: 13px;
 }
 
-.title {
-  text-align: center;
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 78px;
-  font-style: Regular;
-}
 .container {
   width: 1110px;
   margin: 0 auto;
 }
 
 .catalog__container {
-  background-image: url(../images/fon_flowers.png);
+  background-image: url(../Images/fon_flowers.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   padding-top: 220px;
@@ -34,6 +27,14 @@ body {
   margin-bottom: 110px;
   margin-top: 110px;
   color: #515076;
+}
+
+.title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  font-style: Regular;
 }
 
 .clear-list {
@@ -96,6 +97,7 @@ body {
   padding-left: 0;
   list-style-position: inside;
 }
+
 
 .products {
   display: flex;
