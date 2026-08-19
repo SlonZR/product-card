@@ -1,10 +1,16 @@
 // #3
 
 function showWeather(city, temperature) {
-  console.log(`Cейчас в ${city} температура — ${temperature} градусов по Цельсию`)
+  const weather = `Cейчас в ${city} температура — ${temperature} градусов по Цельсию`
+  return weather;
 }
+const temperatureCity = showWeather('Kazan', '25');
+console.log(temperatureCity);
 
-showWeather('Kazan', '25')
+const temperatureCity1 = showWeather('Mekka', '35');
+console.log(temperatureCity1);
+
+
 
 // #4
 
@@ -26,16 +32,14 @@ let product = 'Car';
 let price = 600;
 
 const checkBudget = (currentBudget) => {
-  if(currentBudget > price) {
+  if(currentBudget >= price) {
     console.log('Автомобиль приобретен. Спасибо за покупку!');
-  }
-
-  else {
+  } else {
   let result = price - currentBudget; 
     console.log(`Вам не хватает ${result}. Пополните баланс.`)
   }
 } 
-checkBudget(500);
+checkBudget(600);
 
 //#6
 
