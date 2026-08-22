@@ -16,6 +16,7 @@ console.log(temperatureCity1);
 
 let speedLight = 299792456
 
+function showSpeedLight(speedLight) {
   if (speedLight > 299792458) { 
   console.log('сверхсветовая скорость')
   } 
@@ -24,9 +25,10 @@ let speedLight = 299792456
   }
   else { 
   console.log('субсветовая скорость')
-}
+}}
+    showSpeedLight(300000000)
 
-//#5
+// #5
 
 let product = 'Car';
 let price = 600;
