@@ -18,14 +18,22 @@ const checkArray = films.filter(film => film.name.includes('1+1'))
 
 console.log(checkArray) 
 
- //#1.4
+const movieSearch = (films, query) => {
+  return films.some(film => film.name.includes(query)) 
+}
+const myFilm = movieSearch(films, '1+1')
+console.log(myFilm)
 
- function reverseArr(newFilms) {return newFilms.reverse()
- }
- reverseArr(films)
- reverseArr(numbers)
 
- console.log(films, numbers)
+//#1.4
+
+function reverseArr(newFilms) {
+  return newFilms.reverse();
+}
+reverseArr(films);
+reverseArr(numbers);
+
+console.log(films, numbers)
 
 // Уровень 2.7 (создать массив с фильтром почты .com)
  
