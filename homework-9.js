@@ -19,6 +19,7 @@ const checkArray = films.filter(film => film.name.includes('1+1'))
 console.log(checkArray) 
 
 const movieSearch = (films, query) => {
+  if (!Array.isArray(films) || typeof query !== 'string') return false;
   return films.some(film => film.name.includes(query)) 
 }
 const myFilm = movieSearch(films, '1+1')
