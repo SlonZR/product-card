@@ -4,17 +4,18 @@ const productTemplate = document.getElementById('product-template');
 const productList = document.getElementById('product-list');
 
 function getCardCount() {
-    let count;
-    while (true) {
-        const input = prompt("Сколько карточек отобразить? От 1 до 5");
-        if (input === null) return 0; 
-        count = parseInt(input, 10);
-        if (!isNaN(count) && count >= 1 && count <= 5) {
-            return count; 
-        }
-        alert("Некорректный ввод! Пожалуйста, укажите число от 1 до 5.");
+    const input = prompt("Сколько карточек отобразить? От 1 до 5");
+    if (input === null) return 0; 
+
+    const count = parseInt(input, 10);
+    if (!isNaN(count) && count >= 1 && count <= 5) {
+        return count; 
     }
+
+    alert("Некорректный ввод! Пожалуйста, укажите число от 1 до 5.");
+    return getCardCount(); 
 }
+
  function renderCards(cardsArray) {
     if (!productList || !productTemplate) return;
     productList.innerHTML = '';
