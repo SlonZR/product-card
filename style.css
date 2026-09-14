@@ -1,39 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
-
 * {
     box-sizing: border-box;
-    
 }
 
-body {
-  font-family: Montserrat, sans-serif;
-  font-size: 13px;
-}
-
-
-
-
-.container {
-  width: 1110px;
-  margin: 0 auto;
-}
-
-.catalog__container {
+.catalog {
   background-image: url(../images/fon_flowers.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 495px 0; 
+  background-size: auto;
   padding-top: 220px;
 }
 
 .catalog__title {
-  margin-top: 0px;
   margin-bottom: 110px;
-  margin-top: 110px;
+  margin-top: 0px;
   color: #515076;
-}
-
-.title {
   text-align: center;
   font-size: 70px;
   font-weight: 400;
@@ -41,110 +23,84 @@ body {
   font-style: Regular;
 }
 
-.clear-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card {
-  padding: 25px;
-  width: 100%;
+.products-item {
+  width: 340px;
   background-color: #F7F7FA;
+  padding: 25px;
 }
 
-.card__image {
-  display: block;
-  margin-bottom: 0px;
-}
-
-.card__category {
+.product-category {
   display: block;
   text-transform: uppercase;
+  font-size: 12px;
   margin-top: 30px;
   margin-bottom: 0px;
   color: #A5A3B9;
 }
 
-.card__name {
-  margin-top: 5px;
-  margin-bottom: 0px;
+#product-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  width: 1150px; 
+  gap: 45px; 
+  margin: 0 auto; 
+  padding: 20px;
+  list-style: none;
   color: #515076;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-style: Regular;
+  font-size: 13px;
+  line-height: 18px; 
 }
 
-.card__description {
+.product-image {
+  display: block;
+  margin-bottom: 0px;
+  
+}
+
+.product-name {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  
+}
+
+.product-description {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 0px;
+}
+
+.product-compound {
+  display: block;
+  margin-top: 0px;
+}
+
+.compound-list {
   margin-top: 5px;
   margin-bottom: 15px;
-  font-weight: 400;
-  font-style: Regular;
-  color: #515076;
-}
-
-.card__price {
-  display: flex;
-  justify-content: space-between;
-  font-family: Montserrat;
-  font-style: Bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #515076;
-  margin-top: 25px;
-}
-
-.compound {
-  color: #515076;
-  margin-top: 0px;
-  line-height: 1.5;
-}
-
-.compound__list {
   padding-left: 0;
   list-style-position: inside;
 }
 
-
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 45px;
+.compound-list li {
+  line-height: 1.5;
 }
 
-.products__item {
-  width: 340px;
-}
 
-.catalog__buttonList {
+.product-price {
   display: flex;
   justify-content: space-between;
-  border-radius: 20px;
-  
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 25px;
+  width: 100%; 
 }
-
-.catalog__buttonList button {
-  background-color:  #7D8471;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 10px; 
-  color: antiquewhite;
-  width: 100px;
-  height: 70px;
-}
-
-#colorButton { 
-  background-color: #88706B; 
-}
-
-#colorButton.active { 
-  background-color: #49423D;
- }
-
-
-
-
-
-
-
-
-
-
