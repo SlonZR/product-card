@@ -31,7 +31,85 @@
           </li>
        </template>
       </ul>
+      
+      <button id="openModalBtn">Зарегистрироваться</button>
+        
+      <dialog id="regModal">
+          <div class="modal-content">
+            <button id="closeModalBtn" class="close-btn" aria-label="Закрыть">&times;</button>
+              <h2>Регистрация</h2>
+    
+          <form id="regForm" method="dialog">
+
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="username" name="username" placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+              <label for="lastname">Фамилия</label>
+              <input type="text" id="lastname" name="lastname" required placeholder="Введите фамилию">
+            </div>
+
+            <div class="form-group">
+              <label for="birthday">Дата рождения</label>
+              <input type="date" id="birthday" name="birthday" placeholder="Введите дату рождения">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Электронная почта</label>
+              <input type="email" id="email" name="email" placeholder="example@mail.com">
+            </div>
+      
+            <div class="form-group">
+              <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" minlength="6" placeholder="Пароль">
+            </div>
+            
+            <div class="form-group"> 
+              <label for="password-repeat">Повторите пароль</label> 
+              <input type="password" id="password-repeat" name="password-repeat" required minlength="6" placeholder="Повторите пароль"> 
+            </div> 
+      
+            <button type="submit" class="submit-btn">Создать аккаунт</button>
+          </form>
+        </div>
+      </dialog>
+
 </main>
-<script type="module" src="homework-10.js"></script> 
+<footer class="footer">
+  <div class="footer__container">
+    
+    <div class="footer__info">
+      <h3 class="footer__info-name">Product Cards</h3>
+      <p class="footer__info-text">У Нас Самые Лучшие Продукты Для Кожи!</p>
+        <ul class="footer__socials" aria-label="Социальные сети">
+          <li><a href="https://t.me" target="_blank" style="font-size: 24px; color: white; text-decoration: none;">✉</a></li>
+          <li><a href="https://vk.com" target="_blank" style="font-size: 24px; color: white; text-decoration: none;">🖧</a></li>
+        </ul>
+
+    </div>
+    <div class="footer__subscribe">
+      <p class="footer__subscribe-text">Подпишись на наши акции:</p>
+        <form class = "footer__subscribe-form" id="emailForm">
+          <input name="subscribe-email" type="email" placeholder="Введите свой Email" class="footer__subscribe-input" >
+          <button class="footer__button" type="submit">Подписаться</button>
+        </form>
+     </div>
+  
+    <nav class="footer__menu">
+        <p class="footer__menu-name">Быстрые ссылки</p>
+        <ul class="footer__menu-list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    
+  </div>
+  <a href="#" class="footer__copyright">www.product-cards.com©all right reserve</a>
+</footer>
+<script type="module" src="homework-10.js"></script>
+<script type="module" src="homework-11.js"></script>
 </body>
 </html>
